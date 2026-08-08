@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { API_URL } from "../../config/api";
 import "./index.css";
 
 const DEFAULT_JD =
@@ -42,7 +43,7 @@ const YourResumes = () => {
 
       // STEP 1: Upload Resume
       const uploadResponse = await fetch(
-        "http://localhost:5000/resume/upload",
+        `${API_URL}/resume/upload`,
         {
           method: "POST",
           headers: {
@@ -66,7 +67,7 @@ const YourResumes = () => {
       };
 
       const analyzeResponse = await fetch(
-        "http://localhost:5000/resume/analyze",
+        `${API_URL}/resume/analyze`,
         {
           method: "POST",
           headers: {

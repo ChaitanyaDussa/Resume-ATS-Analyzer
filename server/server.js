@@ -10,7 +10,11 @@ dotenv.config();
 const app = express();
 
 app.use(express.json());
-app.use(cors());
+app.use(
+  cors({
+    origin: process.env.CLIENT_URL || "http://localhost:5173",
+  })
+);
 
 // MongoDB Connection
 mongoose.connect(process.env.MONGODB_URI)
