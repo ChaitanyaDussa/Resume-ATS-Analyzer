@@ -1,0 +1,18 @@
+# dependencies
+node_modules/
+client/node_modules/
+server/node_modules/
+
+# env files (never commit secrets)
+.env
+server/.env
+client/.env
+
+# build output
+client/dist/
+client/build/
+
+# misc
+.DS_Store
+*.log
+npm-debug.log*
