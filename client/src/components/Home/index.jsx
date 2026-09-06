@@ -202,9 +202,9 @@ const Home = () => {
             <div className="footer-logo">✦ ResumeATS</div>
             <p>AI-powered resume optimization to help you land your dream job faster.</p>
             <div className="footer-socials">
-              <a href="#" aria-label="Twitter">𝕏</a>
-              <a href="#" aria-label="LinkedIn">in</a>
-              <a href="#" aria-label="GitHub">⌥</a>
+              {/* <a href="#" aria-label="Twitter">𝕏</a>*/}
+              <a href="https://www.linkedin.com/in/chaitanya-dussa-fullstackdevelopment/" aria-label="LinkedIn">in</a>
+              <a href="https://github.com/ChaitanyaDussa" aria-label="GitHub">⌥</a>
             </div>
           </div>
           <div className="footer-links">
